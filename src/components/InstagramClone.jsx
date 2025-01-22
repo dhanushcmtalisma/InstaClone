@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Facebook } from 'lucide-react';
+import Insta from '../assets/insta.png';
+import Ms from '../assets/ms.png'
+import Playstore from '../assets/play.png'
 
 const InstagramClone = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -41,7 +44,7 @@ const InstagramClone = () => {
           {/* Instagram Logo */}
           <div className="flex justify-center">
             <img 
-            src="src\assets\insta.png" 
+            src={Insta}
             alt=""
             className="h-20" 
             />
@@ -124,14 +127,14 @@ const InstagramClone = () => {
           <div className="flex space-x-2 mt-4">
             <button>
             <img
-              src="src\assets\play.png"
+              src={Playstore}
               alt="Get it on Google Play"
               className="h-10"
             />
             </button>
             <button>
             <img
-              src="src\assets\ms.png"
+              src={Ms}
               alt="Get it from Microsoft"
               className="h-10"
             />
